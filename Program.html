@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+    Enter a number:<input type="text" id="t1" /><br />
+    Enter a number:<input type="text" id="t2" /><br />
+    Result:<input type="text" id="t3" /><br />
+
+    <input type="button" value="Addition" onclick="addition()" />
+    <input type="button" value="Substraction" onclick="sub()" />
+    <input type="button" value="Multiplication" onclick="mul()" />
+    <b id="b1"></b>
+    <b id="b2"></b>
+    <script>
+            function addition()
+            {
+            var n1=document.getElementById("t1").value;
+            var n2=document.getElementById("t2").value;
+            var sum=parseInt(n1)+parseInt(n2);
+            document.getElementById("t3").value=sum;
+            document.getElementById("b1").innerHTML="Addition is"+sum;
+            }
+        function sub()
+           {
+            var n1=document.getElementById("t1").value;
+            var n2=document.getElementById("t2").value;
+            var sum=parseInt(n1)+parseInt(n2);
+            document.getElementById("t3").value=sub;
+            document.getElementById("b2").innerHTML="Substraction is"-sub;
+          }
+         function mul()
+            {
+            var n1=document.getElementById("t1").value;
+            var n2=document.getElementById("t2").value;
+            var sum=parseInt(n1)+parseInt(n2);
+            document.getElementById("t3").value=sum;
+            document.getElementById("b1").innerHTML="Addition is"+sum;
+            }
+
+    </script>
+
+</body>
+
+</html>
